@@ -1,66 +1,80 @@
-/*Reset Css*/
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
   
-    background-image: url("/img/fundo.jpg");
+  body {
+    background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
+    font-size: 18px;
+  }
+  
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos  */
+  @media (min-width: 400px){
+    body{
+        font-size: 14px;
+        
+    }
 }
 
-header {
-    height: 100vh;
+/*Breakpoints*/
+@media (min-width: 600px){
+    body{
+        font-size: 14px;
+       
+        
+    }
+}
+
+
+  
+  header {
+    height: 60vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.menu {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu {
     background-color: white;
     position: fixed;
     top: 0;
-}
-
-.menu ul {
+    width: 100vw;
+  }
+  
+  .menu ul {
     display: flex;
     justify-content: space-around;
-
-}
-
-.menu li {
+  }
+  
+  .menu li {
     list-style: none;
-
-}
-
-a {
+  }
+  
+  .menu a {
     color: teal;
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.site-title,
-.site-subtitle {
-    text-align: center;
+  }
+  
+  .site-title {
     color: whitesmoke;
-    
-
-}
-
-.site-subtitle {
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    color: silver;
     font-style: italic;
-}
-
-.img-portifolio {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  .img-portifolio {
     height: 180px;
     width: 180px;
-
-}
+  }
